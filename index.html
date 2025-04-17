@@ -24,6 +24,7 @@
       align-items: center;
       justify-content: flex-start;
       gap: 2rem;
+      padding-top: 6rem; /* added to account for fixed nav */
     }
     header img {
       width: 180px;
@@ -41,9 +42,15 @@
       text-align: center;
     }
     nav {
-      background: #A5B4B4;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #C8D7D7;
       padding: 0.5rem 2rem;
       text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     nav a {
       margin: 0 1rem;
